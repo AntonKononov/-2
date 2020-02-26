@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #d16167;
+  height: 150px;
+}
+
+nav {
+  background-color: #5552f2;
+  height: 400px;
+}
+
+footer {
+  background-color: #d16167;
+  height: 105px;
+  text-align: center;
+}
+
+/*Header style*/
+
+h1 {
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+/*Body style*/
+
+h2 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.images li {
+  display: inline;
+}
+
+.images li img {
+  height: 50vh;
+  float: left;
+  width: 50%;
+}
+
+.names li {
+  display: inline-block;
+  padding: 20px 10%;
+}
+
+#Halloween {
+  float: right;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #d16167;
+  border-radius: 20px;
+  background-color: #d16167;
+}
+
+/*Footer style*/
+
+footer h3 {
+  padding-top: 10px;
+  margin-bottom: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+footer a {
+  border: 1px solid #5552f2;
+  border-radius: 20px;
+  background-color: #5552f2;
+}

@@ -1,0 +1,21 @@
+body {
+  background-color: #d16167;
+}
+
+table,
+th,
+td {
+  width: 600;
+  margin: auto;
+  border: 1px solid black;
+  margin-top: 200px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #5552f2;
+  border-radius: 20px;
+  background-color: #5552f2;
+}

@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(54, 179, 179);
+}
+a {
+    color: rgb(134, 88, 88);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #796eb8;
+    border-radius: 20px;
+    background-color: #796eb8;
+}
+
+.square1,
+.square2 {
+    transition-duration: 3s;
+    transition-timing-function: linear;
+}
+
+.square1 {
+    background: #1a0d64;
+    border-radius: 3px;
+    height: 150px;
+    margin: 100px;
+    position: absolute;
+    width: 150px;
+}
+
+.square2 {
+    background: #2b3f53;
+    border-radius: 3px;
+    height: 150px;
+    margin: 100px;
+    position: absolute;
+    width: 150px;
+}
+
+.square2:hover {
+    transform: translate(30px, 30px);
+}

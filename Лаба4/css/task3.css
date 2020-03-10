@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(54, 179, 179);
+}
+
+a {
+    color: rgb(134, 88, 88);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #796eb8;
+    border-radius: 20px;
+    background-color: #796eb8;
+}
+
+
+div {
+    margin: 150px;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(134, 88, 88);
+    border-radius: 50%;
+
+}
+
+div:hover {
+
+    background-color: #000;
+    transition-timing-function: erase-in;
+    transform: translate(150px, 150px);
+    /* transform: scale(2);
+    transform: rotateX(45deg); */
+    transition: 2.25s;
+}

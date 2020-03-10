@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(54, 179, 179);
+}
+
+a {
+    color: rgb(134, 88, 88);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #796eb8;
+    border-radius: 20px;
+    background-color: #796eb8;
+}
+
+.rectangle {
+    height: 200px;
+    width: 200px;
+    margin: 200px;
+    background-color: #555;
+}
+
+div {
+    transition: transform 2s;
+}
+
+div:hover {
+    transform: rotate(45deg);
+}

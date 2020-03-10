@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(54, 179, 179);
+}
+
+a {
+  color: rgb(134, 88, 88);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #796eb8;
+  border-radius: 20px;
+  background-color: #796eb8;
+}
+
+@keyframes color-me {
+
+  0% {
+    background: rgb(15, 160, 58);
+  }
+
+  9% {
+    background: rgb(47, 153, 185);
+  }
+
+  50% {
+    background: rgb(73, 73, 212);
+  }
+
+  91% {
+    background: rgb(109, 35, 116);
+  }
+
+  100% {
+    background: rgb(160, 30, 52);
+  }
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  margin: 150px;
+  background: rgb(136, 129, 129);
+  animation: color-me 0.25s;
+}

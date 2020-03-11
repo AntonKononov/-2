@@ -1,91 +1,122 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-    background-color: rgb(54, 179, 179);
+  background-color: rgb(54, 179, 179);
 }
 
 a {
-    color: rgb(134, 88, 88);
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 1px solid #796eb8;
-    border-radius: 20px;
-    background-color: #796eb8;
+  color: rgb(134, 88, 88);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #796eb8;
+  border-radius: 20px;
+  background-color: #796eb8;
 }
 
 h2 {
-    color: brown;
-    text-align: center;
+  color: brown;
+  text-align: center;
 }
 
 .css-grid {
-    display: grid;
+  display: grid;
 }
 
 #first,
 #second,
-#third {
-    display: inline-block;
-    width: 100%;
+#third,
+#fourth
+ {
+  display: inline-block;
+  width: 100%;
 }
 
+
 .col-1 {
-    width: 8.33%;
-    background-color: palegreen;
-  }
-  .col-2 {
-    width: 16.66%;
-    background-color: olive;
-  }
-  .col-3 {
-    width: 25%;
-    background-color: firebrick;
-  }
-  .col-4 {
-    width: 33.33%;
-    background-color: teal;
-  }
-  .col-5 {
-    width: 41.66%;
-    background-color: pink;
-  }
-  .col-6 {
-    width: 50%;
-    background-color: bisque;
-  }
-  .col-7 {
-    width: 58.33%;
-    background-color: aquamarine;
-  }
-  .col-8 {
-    width: 66.66%;
-    background-color: purple;
-  }
-  .col-9 {
-    width: 75%;
-    background-color: blue;
-  }
-  .col-10 {
-    width: 83.33%;
-    background-color: red;
-  }
-  .col-11 {
-    width: 91.66%;
-    background-color: green;
-  }
-  .col-12 {
-    width: 100%;
-    background-color: yellow;
-  }
+  width: 8.33%;
+  background-color: palegreen;
+}
 
+.col-2 {
+  width: 16.66%;
+  background-color: olive;
+}
 
+.col-3 {
+  width: 25%;
+  background-color: firebrick;
+}
 
+.col-4 {
+  width: 33.33%;
+  background-color: teal;
+}
 
-  [class*="col-"] {
-    float: left;
-    height: 10vw;
-  }
+.col-5 {
+  width: 41.66%;
+  background-color: pink;
+}
 
-  
+.col-6 {
+  width: 50%;
+  background-color: bisque;
+}
+
+.col-7 {
+  width: 58.33%;
+  background-color: aquamarine;
+}
+
+.col-8 {
+  width: 66.66%;
+  background-color: purple;
+}
+
+.col-9 {
+  width: 75%;
+  background-color: blue;
+}
+
+.col-10 {
+  width: 83.33%;
+  background-color: red;
+}
+
+.col-11 {
+  width: 91.66%;
+  background-color: green;
+}
+
+.col-12 {
+  width: 100%;
+  background-color: yellow;
+}
+
+.first {
+  background-color: purple;
+}
+
+.second {
+  height: 100%;
+}
+
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+.sero {
+  background-color: #5760c7;
+}
+
+[class*="col-"] {
+  float: left;
+  height: 10vw;
+}

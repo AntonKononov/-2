@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    padding: 100px 0px;
+}
+
+.main-menu {
+    float: right;
+    list-style: none;
+}
+
+.main-menu li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.all {
+    display: block;
+}
+
+.hamburger {
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.navbar {
+    padding: 22px 21px;
+}
+
+.main {
+    width: 414px;
+    height: 414px;
+    box-shadow: 0 0 65px rgba(218, 229, 239, 0.55);
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -207px;
+}
+
+.text {
+    padding-top: 151px;
+
+}
+
+.text-title {
+    color: #43a9ff;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding-top: 114px;
+    padding-bottom: 12px;
+    padding-left: 130px;
+    padding-right: 130px;
+    /* Text style for "CRIOS" */
+    letter-spacing: 0.48px;
+}
+
+.help-info {
+    color: #4b5863;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.18px;
+    opacity: 0.15;
+}
+
+
+.search {
+    padding: 20px 21px 19px 18px;
+}
+
+.short {
+    margin-top: 7%;
+    text-align: center;
+}
+
+.txt {
+    color: #000000;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.48px;
+}
+
+.lorem {
+    opacity: 0.25;
+    color: #4b5863;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.18px;
+    margin-top: 40px;
+}
+
+/* Horse */
+.horse {
+    background-image: url('../img/horse.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 3%;
+    /* background-size: 100%; */
+    position: absolute;
+
+}
+
+.horse-text {
+    margin-top: 600px;
+    text-align: center;
+}
+
+.horse-txt {
+    opacity: 0.25;
+    color: #4b5863;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.18px;
+    margin-top: 40px;
+}
+
+.horse-title {
+    color: #000000;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.48px;
+    margin-top: 22px;
+    margin-bottom: 152px;
+}
+
+
+/* Icons */
+
+
+.icons-section {
+    margin-top: 650px;
+    margin-left: 7%;
+}
+
+.icons {
+    list-style: none;
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-image {
+    width: 50px;
+    height: 47px;
+    margin-bottom: 45px;
+    margin-left: 80px;
+}
+
+.icon-logo {
+    width: 254px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18.02px;
+    letter-spacing: 0.18px;
+    margin-bottom: 41px;
+}
+
+.icon-text {
+    opacity: 0.35;
+    color: #4b5863;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.03px;
+    letter-spacing: 0.14px;
+    width: 228px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
+
+.check-button {
+    width: 229px;
+    height: 51px;
+    box-shadow: 0 0 35px rgba(218, 229, 239, 0.45);
+    border-radius: 22px;
+    background-color: #ffffff;
+    color: #43a9ff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.14px;
+}
+
+
+/* Amazing sectin */
+
+.col-6 {
+    padding: 0;
+}
+
+.amazing-content {
+    /* display: block; */
+    background-color: #f7f8fb;
+    padding: 6% 4% 5% 5%;
+}
+
+.amazing-title {
+    color: #000000;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+    margin-bottom: 40px;
+
+}
+
+.amazing-text {
+    opacity: 0.35;
+    color: #4b5863;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.16px;
+    width: 498px;
+
+}
+
+
+/*  APP */
+
+
+.winterOne {
+    background: url(../img/winter.png) no-repeat left top -100px;
+
+}
+
+.winterTwo {
+    background: url(../img/winter1.png) no-repeat right bottom -100px;
+
+}
+
+.app-content {
+    margin-top: 250px;
+    padding: 6% 4% 5% 15%;
+}
+
+.app-title {
+    color: #43a9ff;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+    margin-bottom: 40px;
+}
+
+.app-text {
+    width: 498px;
+    opacity: 0.35;
+    color: #4b5863;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.16px;
+}
+
+
+.app-imageOne {
+    padding: 7% 3% 0% 35%;
+}
+
+.TwoImage {
+    margin-right: 150px;
+}
+
+.app-imageTwo {
+    padding: 2% 0% 10% 0%;
+}
+
+/* Person */
+
+.row-person {
+    background: url(../img/winter2.png) no-repeat left top -100px;
+    background-color: #f7f8fb;
+}
+
+.person-title {
+    margin-top: 120px;
+    color: #fe3254;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+    margin-bottom: 44px;
+}
+
+.person-text {
+    width: 498px;
+    opacity: 0.35;
+    color: #4b5863;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.16px;
+    margin-bottom: 80px;
+}
+
+.person-name {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.16px;
+}
+
+.personT {
+    margin-top: 13px;
+    opacity: 0.25;
+    color: #4b5863;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.16px;
+}
+
+.forest {
+    margin-top: 100px;
+    text-align: center;
+    background-image: url('../img/forest.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 3%;
+    /* background-size: 100%; */
+    position: absolute;
+}
+
+.forest-content {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.forest-text {
+    opacity: 0.25;
+    color: #4b5863;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.18px;
+    margin-bottom: 22px;
+}
+
+.forest-title {
+    color: #000000;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+    margin-bottom: 110px;
+}
+
+.forest-button {
+    width: 229px;
+    height: 51px;
+    box-shadow: 0 0 35px rgba(218, 229, 239, 0.45);
+    border-radius: 22px;
+    background-color: #ffffff;
+    color: #43a9ff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.14px;
+}
+
+.forms {
+    margin-top: 20%;
+}

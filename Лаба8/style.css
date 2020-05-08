@@ -1,0 +1,15 @@
+body {
+    font-size: 3vh;
+    background-color: #d16167;
+}
+
+table,
+th,
+td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+tr:hover {
+    background: purple;
+}

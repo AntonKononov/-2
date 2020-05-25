@@ -5,11 +5,112 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
 }
 
 section {
-    padding: 100px 0px;
+    padding: 50px 0;
+    clear: both;
+}
+
+h2 {
+    font-size: 3vw;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    opacity: 0.3;
+    text-align: center;
+    font-size: 1.8vw;
+}
+
+/*Адаптація для телефонів*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 3%;
+}
+
+.float-clearing {
+    zoom: 1;
+}
+
+.float-clearing:after {
+    zoom: 1;
+    content: " ";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* Header Style */
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .main-menu {
@@ -20,23 +121,27 @@ section {
 .main-menu li {
     display: inline-block;
     margin-right: 30px;
-    margin-top: 15px;
-    font-size: 1.2em;
+    font-size: 0.8em;
 }
 
-.all {
-    display: block;
+nav {
+    height: 60px;
+    padding: 15px;
 }
 
-.hamburger {
-    margin-top: 15px;
-    background-color: white;
-    border-radius: 50%;
-
+.mobile-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: none;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
-.navbar {
-    padding: 22px 21px;
+.mobile-nav img {
+    font-size: 200%;
+    color: #fff;
 }
 
 .main {
@@ -51,13 +156,11 @@ section {
 
 .text {
     padding-top: 151px;
-
 }
 
 .text-title {
     color: #43a9ff;
     font-family: Montserrat;
-    font-size: 48px;
     font-weight: 700;
     line-height: 18px;
     text-transform: uppercase;
@@ -80,7 +183,6 @@ section {
     opacity: 0.15;
 }
 
-
 .search {
     padding: 20px 21px 19px 18px;
 }
@@ -90,106 +192,48 @@ section {
     text-align: center;
 }
 
-.txt {
-    color: #000000;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.48px;
-}
-
-.lorem {
-    opacity: 0.25;
-    color: #4b5863;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.18px;
-    margin-top: 40px;
-}
 
 /* Horse */
 .horse {
-    background-image: url('../img/horse.png');
+    background-image: url("../img/horse.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 100%;
-    margin-top: 3%;
-    /* background-size: 100%; */
     position: absolute;
-
 }
-
-.horse-text {
-    margin-top: 600px;
-    text-align: center;
-}
-
-.horse-txt {
-    opacity: 0.25;
-    color: #4b5863;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.18px;
-    margin-top: 40px;
-}
-
-.horse-title {
-    color: #000000;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.48px;
-    margin-top: 22px;
-    margin-bottom: 152px;
-}
-
 
 /* Icons */
 
-
 .icons-section {
-    margin-top: 650px;
-    margin-left: 7%;
+    margin-top: 700px;
 }
 
 .icons {
-    list-style: none;
     margin-top: 100px;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .icon-image {
-    width: 50px;
-    height: 47px;
-    margin-bottom: 45px;
-    margin-left: 80px;
+    font-size: 1.8vw;
+    margin-bottom: 40px;
+    margin-left: 35%;
 }
 
 .icon-logo {
-    width: 254px;
+    width: 100%;
     color: #000000;
-    font-size: 18px;
+    text-align: center;
+    font-size: 1.5vw;
     font-weight: 700;
-    line-height: 18.02px;
-    letter-spacing: 0.18px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
 }
 
 .icon-text {
     opacity: 0.35;
+    width: 100%;
     color: #4b5863;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24.03px;
-    letter-spacing: 0.14px;
-    width: 228px;
+    font-size: 1.4vw;
 }
 
 .btn {
@@ -213,7 +257,6 @@ section {
     letter-spacing: 0.14px;
 }
 
-
 /* Amazing sectin */
 
 .col-6 {
@@ -221,139 +264,104 @@ section {
 }
 
 .amazing-content {
-    /* display: block; */
     background-color: #f7f8fb;
     padding: 6% 4% 5% 5%;
 }
 
-.amazing-title {
-    color: #000000;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.48px;
-    margin-bottom: 40px;
-
+.amazing-image {
+    width: 100%;
+    height: 100%;
 }
 
-.amazing-text {
-    opacity: 0.35;
-    color: #4b5863;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0.16px;
-    width: 498px;
-
-}
 
 
 /*  APP */
-
+#app-section {
+    padding: 0;
+}
 
 .winterOne {
     background: url(../img/winter.png) no-repeat left top -100px;
-
 }
 
 .winterTwo {
     background: url(../img/winter1.png) no-repeat right bottom -100px;
+}
 
+#app-section img {
+    height: 50vw;
+    margin: 10vw auto;
+    display: block;
 }
 
 .app-content {
-    margin-top: 250px;
-    padding: 6% 4% 5% 15%;
+    text-align: center;
+    margin-top: 25vw;
 }
 
-.app-title {
-    color: #43a9ff;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.48px;
-    margin-bottom: 40px;
-}
-
-.app-text {
-    width: 498px;
-    opacity: 0.35;
-    color: #4b5863;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0.16px;
-}
-
-
-.app-imageOne {
-    padding: 7% 3% 0% 35%;
-}
-
-.TwoImage {
-    margin-right: 150px;
-}
-
-.app-imageTwo {
-    padding: 2% 0% 10% 0%;
-}
 
 /* Person */
 
-.row-person {
-    background: url(../img/winter2.png) no-repeat left top -100px;
+#person {
     background-color: #f7f8fb;
 }
 
+.John {
+    background: url(../img/winter2.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+}
+
+.John img {
+    height: 20vw;
+    margin: 10vw 6vw;
+}
+
+.person-info {
+    margin: 10vw 1vw;
+}
+
 .person-title {
-    margin-top: 120px;
     color: #fe3254;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 30px;
+    font-size: 3vw;
     letter-spacing: 0.48px;
-    margin-bottom: 44px;
 }
 
 .person-text {
-    width: 498px;
     opacity: 0.35;
-    color: #4b5863;
-    font-size: 16px;
+    font-size: 1.8vw;
     font-weight: 400;
     line-height: 36px;
     letter-spacing: 0.16px;
-    margin-bottom: 80px;
 }
 
 .person-name {
     color: #000000;
-    font-size: 16px;
+    font-size: 1.8vw;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 36px;
     letter-spacing: 0.16px;
 }
 
 .personT {
-    margin-top: 13px;
     opacity: 0.25;
     color: #4b5863;
-    font-size: 16px;
     font-weight: 400;
     line-height: 36px;
+    font-size: 1.8vw;
     letter-spacing: 0.16px;
 }
 
 .forest {
     margin-top: 100px;
     text-align: center;
-    background-image: url('../img/forest.png');
+    background-image: url("../img/forest.png");
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 100%;
     margin-top: 3%;
-    /* background-size: 100%; */
     position: absolute;
 }
 
@@ -362,26 +370,7 @@ section {
     text-align: center;
 }
 
-.forest-text {
-    opacity: 0.25;
-    color: #4b5863;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.18px;
-    margin-bottom: 22px;
-}
-
-.forest-title {
-    color: #000000;
-    font-size: 44px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.48px;
-    margin-bottom: 110px;
-}
-
-.forest-button {
+.button {
     width: 229px;
     height: 51px;
     box-shadow: 0 0 35px rgba(218, 229, 239, 0.45);
@@ -393,8 +382,51 @@ section {
     line-height: 18px;
     text-transform: uppercase;
     letter-spacing: 0.14px;
+    display: block;
+    margin: 0 auto;
 }
 
 .forms {
     margin-top: 20%;
+}
+
+/************************
+Anamation Styles
+**************************/
+
+.anim1,
+.anim2,
+.anim3 {
+    opacity: 0;
+}
+
+.anim1.animated,
+.anim2.animated,
+.anim3.animated {
+    opacity: 1;
+}
+
+/* Media Querry Styles */
+
+@media only screen and (max-width: 1000px) {
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .mobile-nav {
+        display: inline-block;
+    }
+
+    .main-menu {
+        float: right;
+        margin-top: 30px;
+        display: none;
+    }
+
+    .main-menu li {
+        display: block;
+        padding: 10px 0;
+    }
 }

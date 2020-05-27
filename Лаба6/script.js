@@ -1,46 +1,91 @@
 var preloader = document.getElementById("preloader");
-var container_images = document.getElementById("container_images");
-var container_big_image = document.getElementById("container_big_image");
-var expandIMG = document.createElement("img");
-var button = document.createElement("span");
 
-var list = [
-  "images/preloader.svg",
-  "images/img1.jpg",
-  "images/img2.jpg",
-  "images/img3.jpg",
-  "images/img4.jpg",
-  "images/img5.jpg",
-  "images/img6.jpg",
-  "images/img7.jpg",
-  "images/img8.jpg",
-];
+class PhotoGallery extends HTMLElement {
+  constructor() {
+      super()
+      const div = document.createElement("div");
+      const shadow = this.attachShadow({ mode: "open" });
+      div.setAttribute("id", "photo-gallery");
+      shadow.appendChild(div);
+      const style = document.createElement("style");
+      style.innerHTML = `
+  #photo-gallery
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #photo-gallery div
+  {
+    width: 500px;
+    height: 500px;
+    margin: 5px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+          justify-content: center;
+      }
+      
+  #photo-gallery div#fullscreen
+  {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all .5s ease-out;
+          z-index: 3;
+      }
+      #photo-gallery div1#fullscreen{
+          position: absolute;
+          filter: grayscale(100%);
+          opacity: 0.33;
+          z-index: 2;
+      }`;
+      shadow.appendChild(style);
+      if (this.hasAttribute("ImageList")) {
+          let piclist = this.getAttribute("ImageList").split(';');
+          for (let i of piclist) {
+              const element = document.createElement("div");
+              element.setAttribute("onclick", "fullscreen(this)");
+              const pic = document.createElement("img");
+              pic.setAttribute("onerror", "this.src = 'images/error.jpg'")
+              pic.setAttribute("onload", "expandeImage(this)")
+              pic.setAttribute("src", i);
+              element.appendChild(pic);
+              div.appendChild(element);
+          }
+      }
+  }
+}
 
-function show_gallery() {
-  for (let i = 1; i < list.length; i++) {
-    let image = document.createElement("img");
-    image.src = list[i];
-    image.style.width = "100%";
+function expandeImage(img) {
+  let imgpos = img.getBoundingClientRect();
+  if (imgpos.height <= imgpos.width) {
+      img.style.height = '100%';
+      img.style.width = 'auto';
+  }
+  if (imgpos.height > imgpos.width) {
+      img.style.height = 'auto';
+      img.style.width = '100%';
+  }
+}
 
-    let div = document.createElement("div");
-    div.className = "column";
+customElements.define("photo-gallery", PhotoGallery);
 
-    div.append(image);
-    container_images.append(div);
+let full = false;
+let gallerystyle = '';
 
-    image.onclick = () => {
-      button.className = "closebtn";
-      button.innerHTML = "×";
-      container_big_image.append(button);
-      button.onclick = () => {
-        button.parentElement.style.display = "none";
-      };
+function fullscreen(pic) {
+  if (!full) {
+      full = true;
+      pic.setAttribute("id", "fullscreen");
+      gallerystyle = pic.firstChild.getAttribute("style");
+      pic.firstChild.setAttribute("style", "height:95vh;");
 
-      expandIMG.src = image.src;
-      expandIMG.style.width = "100%";
-      container_big_image.append(expandIMG);
-      expandIMG.parentElement.style.display = "block";
-    };
+
+  } else {
+      pic.setAttribute("id", "");
+      pic.firstChild.setAttribute("style", gallerystyle);
+      full = false;
   }
 }
 
